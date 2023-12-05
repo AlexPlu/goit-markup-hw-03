@@ -6,54 +6,52 @@
     <title>WebStudio</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
-      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="navbar">
-          <nav>
-            <a class="logo" href="./index.html"
-              >Web<span class="logo-text">Studio</span></a
-            >
-            <ul>
-              <li><a class="nav-item" href="./index.html">Studio</a></li>
-              <li><a class="nav-item" href="">Portfolio</a></li>
-              <li><a class="nav-item" href="">Contacts</a></li>
-            </ul>
-          </nav>
-          <address class="contacts">
-            <ul>
-              <li>
-                <a class="contact-item" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="contact-item" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
+    <header class="main-page-header">
+      <div class="navbar-menu container">
+        <nav class="navbar">
+          <a class="logo" href="./index.html"
+            >Web<span class="logo-text">Studio</span></a
+          >
+          <ul class="navbar-list">
+            <li><a class="nav-item" href="./index.html">Studio</a></li>
+            <li><a class="nav-item" href="">Portfolio</a></li>
+            <li><a class="nav-item" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li>
+              <a class="contact-item" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-item" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
 
     <main>
       <!-- Hero section -->
-      <section class="section">
+      <section class="section hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions<br />for Your Business</h1>
           <button class="primary-button">Order Service</button>
@@ -63,30 +61,30 @@
       <!-- Features section -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Our Core Values</h2>
-          <ul>
-            <li>
+          <h2 class="visually-hidden">Our Core Values</h2>
+          <ul class="features-list">
+            <li class="features-list-item">
               <h3 class="section-item-title">Strategy</h3>
               <p class="section-item-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="section-item-title">Punctuality</h3>
               <p class="section-item-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="section-item-title">Diligence</h3>
               <p class="section-item-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="section-item-title">Technologies</h3>
               <p class="section-item-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -101,46 +99,54 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
-          <ul>
-            <li class="section-list-item">
+          <ul class="team-list">
+            <li class="team-list-item">
               <img
                 src="./images/team-item-1.jpg"
                 alt="Mark Guerrero - Product Designer"
                 width="264"
                 height="260"
               />
-              <h3 class="section-item-title">Mark Guerrero</h3>
-              <p class="section-item-text">Product Designer</p>
+              <div class="team-list-item-container">
+                <h3 class="team-list-item-title">Mark Guerrero</h3>
+                <p class="team-list-item-text">Product Designer</p>
+              </div>
             </li>
-            <li class="section-list-item">
+            <li class="team-list-item">
               <img
                 src="./images/team-item-2.jpg"
                 alt="Tom Ford - Frontend Developer"
                 width="264"
                 height="260"
               />
-              <h3 class="section-item-title">Tom Ford</h3>
-              <p class="section-item-text">Frontend Developer</p>
+              <div class="team-list-item-container">
+                <h3 class="team-list-item-title">Tom Ford</h3>
+                <p class="team-list-item-text">Frontend Developer</p>
+              </div>
             </li>
-            <li class="section-list-item">
+            <li class="team-list-item">
               <img
                 src="./images/team-item-3.jpg"
                 alt="Camila Garcia - Marketing"
                 width="264"
                 height="260"
               />
-              <h3 class="section-item-title">Camila Garcia</h3>
-              <p class="section-item-text">Marketing</p>
+              <div class="team-list-item-container">
+                <h3 class="team-list-item-title">Camila Garcia</h3>
+                <p class="team-list-item-text">Marketing</p>
+              </div>
             </li>
-            <li class="section-list-item">
+            <li class="team-list-item">
               <img
                 src="./images/team-item-4.jpg"
                 alt="Marketing - UI Designer"
                 width="264"
                 height="260"
               />
-              <h3 class="section-item-title">Daniel Wilson</h3>
-              <p class="section-item-text">UI Designer</p>
+              <div class="team-list-item-container">
+                <h3 class="team-list-item-title">Daniel Wilson</h3>
+                <p class="team-list-item-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -150,16 +156,18 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
-          <ul>
-            <li>
+          <ul class="portfolio-list">
+            <li class="portfolio-list-item">
               <img
                 src="./images/portfolio-item-1.jpg"
                 alt="Banking App - App"
                 width="360"
                 height="300"
               />
-              <h3 class="section-item-title">Banking App</h3>
-              <p class="section-item-text">App</p>
+              <div class="portfolio-list-item-container">
+                <h3 class="section-item-title">Banking App</h3>
+                <p class="section-item-text">App</p>
+              </div>
             </li>
             <li>
               <img
